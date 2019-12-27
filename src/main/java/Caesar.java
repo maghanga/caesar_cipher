@@ -11,4 +11,8 @@ class Caesar {
         return plainText;
     }
 
+    public Integer getShift(){
+        return shift;
+    }
+
 }
