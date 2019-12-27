@@ -6,4 +6,9 @@ class Caesar {
         this.plainText = plainText;
         this.shift = shift;
     }
+
+    public String getPlainText(){
+        return plainText;
+    }
+
 }
