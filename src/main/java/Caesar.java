@@ -30,11 +30,23 @@ public class Caesar {
                 if(Character.isLowerCase(character)){
                     char ch = (char)(character + shift);
                     if(ch > 'z'){
-                        cipherText
+                        cipherText += (char)(character - (26 - shift));
+                    } else {
+                        cipherText += ch;
+                    }
+                } else if (Character.isUpperCase(character)){
+                    char ch = (char)(character + shift);
+                    if(ch > 'z'){
+                        cipherText += (char)(character - (26 - shift));
+                    } else {
+                        cipherText += ch;
                     }
                 }
+            } else {
+                cipherText += character;
             }
         }
+        return cipherText;
     }
 
 }
