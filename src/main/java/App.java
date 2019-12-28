@@ -11,19 +11,12 @@ public class App {
             System.out.println("Thank you, now enter the shift: ");
             Integer inputShift = Integer.parseInt(myConsole.readLine());
 
-            Caesar inputCaesar = new Caesar(inputText, inputShift);
-            String cipherText = inputCaesar.encrypt(inputText, inputShift);
+            Caesar inputCaesarEncrypt = new Caesar(inputText, inputShift);
+            String cipherText = inputCaesarEncrypt.encrypt(inputText, inputShift);
 
-            System.out.println("Your ciphered text is " + cipherText);
-
-
+            System.out.println("Your encrypted text is " + cipherText);
 
 
-            System.out.println("Enter an encrypted text to be decrypted: ");
-            String userEncryptedText = myConsole.readLine();
-
-            System.out.println("Enter the shift of the encrypted text: ");
-            Integer userEncryptedShift = Integer.parseInt(myConsole.readLine());
 
 
 

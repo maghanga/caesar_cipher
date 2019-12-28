@@ -20,9 +20,9 @@ public class CaesarTest {
 
     @Test
     public void encrypt_returnEncryptedText_String(){
-        Caesar testCipher3 = new Caesar("thomas", 2);
-        String expectedOutput = new String();
-        assertEquals(expectedOutput, testCipher3.encrypt("vjqocu",2));
+        Caesar testCipher3 = new Caesar("tom", 2);
+        testCipher3.encrypt("tom", 2);
+        assertTrue(testCipher3.encrypt("tom", 2) == "vqo");
 
     }
 
