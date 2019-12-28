@@ -6,24 +6,17 @@ public class CaesarTest {
     @Test
     public void runCipher_returnString_String(){
         Caesar testCipher = new Caesar("nebuchadnezzer",2);
-        String expectedOutput = new String();
+        String expectedOutput = "";
         assertEquals(expectedOutput, testCipher);
-
     }
 
+    @Test
+    public void runCipher_returnInt_Integer(){
+        Caesar testCipher2 = new Caesar("nebuchadnezzer", 2);
+        Integer expectedOutput2 = 2;
+        assertEquals(expectedOutput2, testCipher2 );
 
-//    @Test
-//    public void runPingPong_replaceMultiplesOf5_ArrayList() {
-//        PingPong testPingPong = new PingPong();
-//        ArrayList<Object> expectedOutput = new ArrayList<Object>();
-//        expectedOutput.add(1);
-//        expectedOutput.add(2);
-//        expectedOutput.add("ping");
-//        expectedOutput.add(4);
-//        expectedOutput.add("pong");
-//        assertEquals(expectedOutput, testPingPong.runPingPong(5));
-//    }
-
+    }
 
     @Before
     public void setUp() throws Exception {
