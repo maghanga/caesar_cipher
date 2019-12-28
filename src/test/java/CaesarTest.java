@@ -23,7 +23,13 @@ public class CaesarTest {
         Caesar testCipher3 = new Caesar("tom", 2);
         testCipher3.encrypt("tom", 2);
         assertTrue(testCipher3.encrypt("tom", 2) == "vqo");
+    }
 
+    @Test
+    public void decrypt_returnDecryptedText_String(){
+        Caesar testCipher4 = new Caesar("vqo", 2);
+        testCipher4.decrypt("vqo", 2);
+        assertTrue(testCipher4.decrypt("vqo",2) == "tom");
     }
 
     @Before
