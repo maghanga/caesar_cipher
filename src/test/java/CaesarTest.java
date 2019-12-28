@@ -18,6 +18,14 @@ public class CaesarTest {
 
     }
 
+    @Test
+    public void encrypt_returnShiftedText_String(){
+        Caesar testCipher3 = new Caesar("thomas", 2);
+        String expectedOutput = new String();
+        assertEquals(expectedOutput, testCipher3.encrypt("asthom",2));
+
+    }
+
     @Before
     public void setUp() throws Exception {
     }
