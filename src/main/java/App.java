@@ -12,6 +12,9 @@ public class App {
             System.out.println("Thank you, now enter the shift: ");
             Integer inputShift = Integer.parseInt(myConsole.readLine());
 
+            Caesar inputCaesar = new Caesar(inputText, inputShift);
+
+
 
     }
 }
