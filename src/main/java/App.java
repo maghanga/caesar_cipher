@@ -13,10 +13,6 @@ public class App {
             Integer inputShift = Integer.parseInt(myConsole.readLine());
 
 
-
-
-
-
     }
 }
 
