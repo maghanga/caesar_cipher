@@ -7,14 +7,14 @@ public class CaesarTest {
     public void runCipher_returnStringPlainText_String(){
         Caesar testCipher = new Caesar("tom",2);
         testCipher.getPlainText();
-        assertTrue(testCipher.getPlainText() == "tom");
+        assertEquals("tom", testCipher.getPlainText());
     }
 
     @Test
     public void runCipher_returnIntShift_Integer(){
         Caesar testCipher2 = new Caesar("nebuchadnezzer", 2);
         testCipher2.getShift();
-        assertTrue(testCipher2.getShift() == 2);
+        assertEquals(2, testCipher2.getShift());
 
     }
 
@@ -22,21 +22,14 @@ public class CaesarTest {
     public void encrypt_returnEncryptedText_String(){
         Caesar testCipher3 = new Caesar("tom", 2);
         testCipher3.encrypt("tom", 2);
-        assertTrue(testCipher3.encrypt("tom", 2) == "vqo");
+        assertEquals("vqo", testCipher3.encrypt("tom", 2));
     }
 
     @Test
     public void decrypt_returnDecryptedText_String(){
         Caesar testCipher4 = new Caesar("vqo", 2);
         testCipher4.decrypt("vqo", 2);
-        assertTrue(testCipher4.decrypt("vqo",2) == "tom");
+        assertEquals("tom", testCipher4.decrypt("vqo",2));
     }
 
-    @Before
-    public void setUp() throws Exception {
-    }
-
-    @After
-    public void tearDown() throws Exception {
-    }
 }
