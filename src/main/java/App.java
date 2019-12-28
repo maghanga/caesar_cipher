@@ -19,6 +19,16 @@ public class App {
 
 
 
+            System.out.println("Enter an encrypted text to be decrypted: ");
+            String userEncryptedText = myConsole.readLine();
+
+            System.out.println("Enter the shift of the encrypted text: ");
+            Integer userEncryptedShift = Integer.parseInt(myConsole.readLine());
+
+            Caesar inputCaesarDecrypt = new Caesar(inputText, inputShift);
+            String decrypted = inputCaesarDecrypt.decrypt(inputText, inputShift);
+
+            System.out.println("Your decrypted text is " + decrypted);
 
 
 
