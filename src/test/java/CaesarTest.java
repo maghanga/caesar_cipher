@@ -4,22 +4,22 @@ import static org.junit.Assert.*;
 public class CaesarTest {
 
     @Test
-    public void runCipher_returnString_String(){
-        Caesar testCipher = new Caesar("nebuchadnezzer",2);
-        String expectedOutput = "";
-        assertEquals(expectedOutput, testCipher);
+    public void runCipher_returnStringPlainText_String(){
+        Caesar testCipher = new Caesar("tom",2);
+        testCipher.getPlainText();
+        assertTrue(testCipher.getPlainText() == "tom");
     }
 
     @Test
-    public void runCipher_returnInt_Integer(){
+    public void runCipher_returnIntShift_Integer(){
         Caesar testCipher2 = new Caesar("nebuchadnezzer", 2);
-        Integer expectedOutput2 = 2;
-        assertEquals(expectedOutput2, testCipher2 );
+        testCipher2.getShift();
+        assertTrue(testCipher2.getShift() == 2);
 
     }
 
     @Test
-    public void encrypt_returnShiftedText_String(){
+    public void encrypt_returnEncryptedText_String(){
         Caesar testCipher3 = new Caesar("thomas", 2);
         String expectedOutput = new String();
         assertEquals(expectedOutput, testCipher3.encrypt("vjqocu",2));
