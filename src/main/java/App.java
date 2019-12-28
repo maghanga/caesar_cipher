@@ -5,6 +5,9 @@ public class App {
     public static void main(String[] args){
         Console myConsole = System.console();
 
+        boolean programRunning = true;
+        while (programRunning) {
+
             System.out.println("Enter a text to be encrypted: ");
             String inputText = myConsole.readLine();
 
@@ -17,8 +20,6 @@ public class App {
             System.out.println("Your encrypted text is " + cipherText);
 
 
-
-
             System.out.println("Enter an encrypted text to be decrypted: ");
             String userEncryptedText = myConsole.readLine();
 
@@ -29,7 +30,7 @@ public class App {
             String decrypted = inputCaesarDecrypt.decrypt(inputText, inputShift);
 
             System.out.println("Your decrypted text is " + decrypted);
-
+        }
 
 
     }
