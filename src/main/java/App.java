@@ -9,6 +9,11 @@ public class App {
 
             String inputText = myConsole.readLine();
 
+            System.out.println("Thank you, now enter the shift: ");
+            Integer inputShift = Integer.parseInt(myConsole.readLine());
+
+
+
 
 
 
